@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <header>
+        <h1 class = "title">Adventure Travel Club</h1>
+        <p>Begin your journey with fellow adventurers</p>
+    </header>
+        <div class = "mini-container">
+            <h3 class = "title">Personal Information</h3>
+            <hr>
+          
+           <div class = "names">
+           <span>
+            <label for = "fname">First Name</label>
+            <br>
+            
+           <input type = "text" id = "fname" name="fname"required>
+        </span>
+           <br>
+           <br>
+           <span>
+           <label for = "lname">Last Name</label>
+           <br>
+           <input type = "text" id = "lname" name="lname"required>
+        </span>
+        </div>
+       
+           <br>
+           <label for = "email">Email Address</label>
+           <input type = "text" id = "email" name="email"required>
+           <br>
+           <label for = "date">Date of Birth</label>
+           <input type = "date" id = "date" name="date" placeholder = "mm/dd/yyyy"required>
+
+        </div>
+        <div class = "mini-container">
+            <h3 class = "title">Adventure Preferences</h3>
+            <hr>
+            <label for = "expert">Experience Level</label>
+            <select id = "expert" name = "expert"required>
+                <option value = "">Select your experience level</option>
+                <option value = "easy">easy</option>
+                <option value = "medium">medium</option>
+                <option value = "hard">hard</option>
+            </select>
+            <br>
+          <div class = "options">
+            <label>Preferred Activities</label>
+            <br>
+          
+            <span><input type = "checkbox" id = "hiking" name = "preference" value = "hiking">
+            <label for = "hiking">Hiking</label></span>
+           <span> <input type = "checkbox" id = "Rock Climbing" name = "preference" value = "Rock Climbing">
+            <label for = "Rock Climbing">Rock Climbing</label></span>
+            <span><input type = "checkbox" id = "kayaking" name = "preference" value = "kayaking">
+            <label for = "kayaking">kayaking</label></span>
+            <span><input type = "checkbox" id = "Scuba Diving" name = "preference" value = "Scuba Diving">
+            <label for = "Scuba Diving">Scuba Diving</label></span>
+          
+            <br>
+            <label>Preferred Trip Duration</label>
+            <br>
+          
+            <span><input type = "radio" id = "2-3" name = "Duration" value = "2-3">
+            <label for = "2-3">Weekend Trips(2-3 days)</label></span>
+            <span> <input type = "radio" id = "5-7" name = "Duration" value = "5-7">
+            <label for = "5-7">Week-long Adventures(5-7 days)</label></span>
+            <span><input type = "radio" id = "2+" name = "Duration" value = "2+">
+            <label for = "2+">Extended Expeditions(2+ weeks)</label></span>
+        </div>
+        </div>
+        <div class = "mini-container">
+           <h3 class = "title">Additional Information</h3>
+           <hr>
+            <label for = "fitness">Fitness Level (1-10)</label>
+           <input class = "range" type = "range" id = "fitness" name = "fitness" min = "1" max = "10">
+           <br>
+           <label for = "tell">Tell us about yourself</label>
+           <br>
+           <textarea id = "tell" name = "tell" rows = "5" cols = "50" placeholder = "Share your adventure experiences and what excites you about joining our club..."required></textarea>
+           <br>
+           <label for = "file">Profile Photo</label>
+           <input type = "file" id = "file" name = "file" accepts = ".png, .jpeg, .jpg">
+        </div>
+        <input type = "checkbox" id = "agree" name = "agree" value = "agree"required>
+        <label for "agree">I Agree to the Terms and Conditions and Privacy Policy</label>
+        <br>
+       <div class = "center">
+        <button type = "submit">Submit Registration</button>
+    </div>
+    </div>
+</body>
+</html>
